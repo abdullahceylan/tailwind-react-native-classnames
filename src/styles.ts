@@ -47,6 +47,21 @@ const defaultStyles: Array<[string, StyleIR]> = [
   [`flex-initial`, complete({ flexGrow: 0, flexShrink: 1, flexBasis: `auto` })],
   [`flex-none`, complete({ flexGrow: 0, flexShrink: 0, flexBasis: `auto` })],
 
+  [`grid`, complete({ display: `flex`, flexWrap: `wrap` })],
+
+  [`grid-columns-1`, complete({ flexBasis: `auto` })],
+  [`grid-columns-2`, complete({ flexBasis: `calc(100% / 2)` })],
+  [`grid-columns-3`, complete({ flexBasis: `calc(100% / 3)` })],
+  [`grid-columns-4`, complete({ flexBasis: `calc(100% / 4)` })],
+  [`grid-columns-5`, complete({ flexBasis: `calc(100% / 5)` })],
+  [`grid-columns-6`, complete({ flexBasis: `calc(100% / 6)` })],
+  [`grid-columns-7`, complete({ flexBasis: `calc(100% / 7)` })],
+  [`grid-columns-8`, complete({ flexBasis: `calc(100% / 8)` })],
+  [`grid-columns-9`, complete({ flexBasis: `calc(100% / 9)` })],
+  [`grid-columns-10`, complete({ flexBasis: `calc(100% / 10)` })],
+  [`grid-columns-11`, complete({ flexBasis: `calc(100% / 11)` })],
+  [`grid-columns-12`, complete({ flexBasis: `calc(100% / 12)` })],
+
   [`overflow-hidden`, complete({ overflow: `hidden` })],
   [`overflow-visible`, complete({ overflow: `visible` })],
   [`overflow-scroll`, complete({ overflow: `scroll` })],
